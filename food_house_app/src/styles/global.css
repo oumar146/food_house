@@ -15,14 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-footer * {
-  font-size: 10px;
-}
-
-footer svg:hover{
-    color: #6046b6;
-}
-
 #newsletter * {
     font-size: 10px;
 }

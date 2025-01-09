@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
+
 import {
   Dialog,
   DialogPanel,
@@ -20,12 +22,13 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <div className="-m-1.5 ">
-            <span className="sr-only">Your Company</span>
+            <NavLink to="/home">
             <img
               alt="Logo restaurant"
               src="https://livedemo00.template-help.com/wt_prod-19362/images/logo-189x66.png"
               className="h-6 w-auto"
             />
+           </NavLink>
           </div>
         </div>
         <div className="flex sm:hidden">
