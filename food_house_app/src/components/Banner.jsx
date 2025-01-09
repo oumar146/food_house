@@ -18,10 +18,6 @@ const Banner = () => {
       image: "https://i.pinimg.com/originals/26/3a/6e/263a6eb044289b51933c6c2459041f10.jpg",
       text: "Nos burgers",
     },
-    seafood: {
-      image: "https://previews.123rf.com/images/primopiano/primopiano1705/primopiano170500430/77884356-fond-de-fruits-de-mer-avec-des-plats-d%C3%A9licieux.jpg",
-      text: "Nos fruits de mer",
-    },
     boissons: {
       image: "https://as1.ftcdn.net/v2/jpg/01/58/23/40/1000_F_158234051_x1Mw49rCAUBEgiTQXmagMYx14k4mdpXR.jpg",
       text: "Nos boissons",

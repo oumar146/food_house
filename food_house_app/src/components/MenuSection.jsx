@@ -1,5 +1,5 @@
 import "../styles/MenuSection.css";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const MenuSection = () => {
   const menuItems = [
@@ -8,43 +8,36 @@ const MenuSection = () => {
       title: "Salades",
       bgImage:
         "https://livedemo00.template-help.com/wt_prod-19362/images/menu-1-370x278.jpg",
-      route: "/menu/salades"
+      route: "/cart/salades",
     },
     {
       id: 2,
       title: "Pizzas",
       bgImage:
         "https://livedemo00.template-help.com/wt_prod-19362/images/menu-2-370x278.jpg",
-      route: "/menu/pizzas"
+      route: "/cart/pizzas",
     },
     {
       id: 3,
       title: "Burgers",
       bgImage:
         "https://livedemo00.template-help.com/wt_prod-19362/images/menu-3-370x278.jpg",
-      route: "/menu/burgers"
+      route: "/cart/burgers",
     },
     {
       id: 4,
-      title: "Seafood",
-      bgImage:
-        "https://previews.123rf.com/images/primopiano/primopiano1705/primopiano170500430/77884356-fond-de-fruits-de-mer-avec-des-plats-d%C3%A9licieux.jpg",
-      route: "/menu/seafood"
-    },
-    {
-      id: 5,
       title: "Boissons",
       bgImage:
         "https://livedemo00.template-help.com/wt_prod-19362/images/menu-5-370x278.jpg",
-      route: "/menu/boissons"
+      route: "/cart/boissons",
     },
     {
-      id: 6,
+      id: 5,
       title: "Desserts",
       bgImage:
         "https://livedemo00.template-help.com/wt_prod-19362/images/menu-4-370x278.jpg",
-      route: "/menu/desserts"
-    }
+      route: "/cart/desserts",
+    },
   ];
 
   return (
@@ -54,9 +47,11 @@ const MenuSection = () => {
         {menuItems.map((item) => (
           <NavLink
             key={item.id}
-            to={item.route} 
+            to={item.route}
             className="menu-item"
-            onClick={()=>{window.scrollTo(0,0)}}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
           >
             <img src={item.bgImage} alt={item.title} />
             <h5 className="title">{item.title}</h5>

@@ -68,7 +68,7 @@ const Footer = () => {
           <div>
             <p className="font-semibold tracking-wide text-gray-800">Réservations</p>
             <ul className="mt-2 space-y-2">
-              <li>
+              <li id='reservation'>
                 <a
                   href="/reservation"
                   className="text-gray-700 transition-colors duration-300 hover:text-deep-purple-accent-400"

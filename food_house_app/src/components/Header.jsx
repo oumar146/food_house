@@ -1,15 +1,8 @@
 import { useState } from "react";
-import { NavLink } from 'react-router-dom';
-
-import {
-  Dialog,
-  DialogPanel,
-  PopoverGroup,
-} from "@headlessui/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
+import NavLinkWithScroll from "./NavLinkWithScroll";
+import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,12 +16,12 @@ const Header = () => {
         <div className="flex lg:flex-1">
           <div className="-m-1.5 ">
             <NavLink to="/home">
-            <img
-              alt="Logo restaurant"
-              src="https://livedemo00.template-help.com/wt_prod-19362/images/logo-189x66.png"
-              className="h-6 w-auto"
-            />
-           </NavLink>
+              <img
+                alt="Logo restaurant"
+                src="https://livedemo00.template-help.com/wt_prod-19362/images/logo-189x66.png"
+                className="h-6 w-auto"
+              />
+            </NavLink>
           </div>
         </div>
         <div className="flex sm:hidden">
@@ -41,18 +34,26 @@ const Header = () => {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden sm:flex sm:gap-x-12">
-          <div className="nav-link font-semibold text-gray-900">Menu</div>
-          <div className=" nav-link font-semibold text-gray-900">
-            A propos de nous
-          </div>
-          <div className=" nav-link font-semibold text-gray-900">Company</div>
+        <PopoverGroup className="hidden sm:flex sm:gap-x-5">
+          <NavLinkWithScroll
+            to="/home#menu"
+            className="nav-link font-semibold text-gray-900"
+          >
+            Menu
+          </NavLinkWithScroll>
+          <a
+            href="#reservation"
+            className="nav-link font-semibold text-gray-900"
+          >
+            Reserver
+          </a>
+          <a
+            href="#newsletter"
+            className="nav-link font-semibold text-gray-900"
+          >
+            Newletter
+          </a>
         </PopoverGroup>
-        <div className="hidden sm:flex lg:flex-1 lg:justify-end">
-          <div className=" nav-link text-xs font-semibold text-gray-900">
-            Se connecter <span aria-hidden="true">&rarr;</span>
-          </div>
-        </div>
       </nav>
       <Dialog
         open={mobileMenuOpen}
@@ -63,7 +64,6 @@ const Header = () => {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <div className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
               <img
                 alt=""
                 src="https://livedemo00.template-help.com/wt_prod-19362/images/logo-189x66.png"
@@ -88,13 +88,6 @@ const Header = () => {
                 </div>
                 <div className=" nav-link font-semibold text-gray-900">
                   Company
-                </div>
-              </div>
-              <div className="py-6">
-                <div
-                  className="nav-link -mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
                 </div>
               </div>
             </div>

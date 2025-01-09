@@ -1,5 +1,6 @@
 import Home from './pages/Home';
-import Menu from './pages/Menu'; 
+import Cart from './pages/Cart'; 
+import PizzaDetails from './pages/PizzaDetails ';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Utilisation de Navigate pour redirections
 import './styles/global.css'
 
@@ -10,7 +11,8 @@ const Router = () => {
 const routes = [
   { path: "/", element: <Home /> },
   { path: "/home", element: <Home /> },
-  { path: "/menu/:category", element: <Menu/> },
+  { path: "/cart/:category", element: <Cart/> },
+  { path: "/cart/:category/:productName", element: <PizzaDetails/> }
 ];
 
   return (

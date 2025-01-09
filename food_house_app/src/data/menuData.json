@@ -1,0 +1,300 @@
+{
+  "salades": [
+    {
+      "name": "Salade César",
+      "image": "https://www.clubhouse.ca/-/media/project/oneweb/clubhouseca/recipes/emilie-murmure-ms-caesar-saald-influencer-wm-800x800.webp",
+      "price": "8€",
+      "description": "Un mélange savoureux de laitue croquante, de poulet grillé et de croûtons, avec une sauce César classique.",
+      "ingredients": [
+        "Laitue",
+        "Poulet grillé",
+        "Croûtons",
+        "Parmesan",
+        "Sauce César"
+      ]
+    },
+    {
+      "name": "Salade Niçoise",
+      "image": "https://montougo.ca/wp-content/uploads/2021/02/salade-nicoise-oeufs-vinaigrette-herbes-1500x1500-1614035946.jpg",
+      "price": "7€",
+      "description": "Une salade méditerranéenne classique avec du thon, des œufs durs et des légumes frais.",
+      "ingredients": [
+        "Laitue",
+        "Thon",
+        "Œufs durs",
+        "Haricots verts",
+        "Tomates",
+        "Olives noires",
+        "Vinaigrette"
+      ]
+    },
+    {
+      "name": "Salade Grecque",
+      "image": "https://fgdjrynm.filerobot.com/recipes/e1a9571c91512103e8e6c813797b76c8c4bd44dbbb0f7896d576f44be2cc645f.jpg",
+      "price": "9€",
+      "description": "Une salade fraîche et colorée avec des concombres, des tomates et de la feta.",
+      "ingredients": [
+        "Concombres",
+        "Tomates",
+        "Feta",
+        "Olives noires",
+        "Oignons rouges",
+        "Origan",
+        "Huile d'olive"
+      ]
+    },
+    {
+      "name": "Salade Avocat et Poulet",
+      "image": "https://fgdjrynm.filerobot.com/recipes/789aa21dd235b36ad63f43aabd9ed59b7e39c168801e1165536ea58de170c59a.jpg",
+      "price": "10€",
+      "description": "Une salade généreuse avec de l'avocat crémeux, du poulet grillé et des légumes croquants.",
+      "ingredients": [
+        "Avocat",
+        "Poulet grillé",
+        "Laitue",
+        "Tomates cerises",
+        "Concombres",
+        "Vinaigrette au citron"
+      ]
+    },
+    {
+      "name": "Salade de Quinoa",
+      "image": "https://fgdjrynm.filerobot.com/recipes/421ee3c83f783066795630c7de6b0e40914847e57aafb4761273c0e8c4b754c9.jpg?vh=679341&h=800&w=800&q=60",
+      "price": "11€",
+      "description": "Une salade nutritive avec du quinoa, des légumes frais et une touche de citron.",
+      "ingredients": [
+        "Quinoa",
+        "Concombres",
+        "Tomates",
+        "Avocat",
+        "Persil",
+        "Citron",
+        "Huile d'olive"
+      ]
+    },
+    {
+      "name": "Salade Caprese",
+      "image": "https://www.hillcottage.services/450-large_default/salade-caprese.jpg",
+      "price": "8€",
+      "description": "Une salade italienne classique avec de la mozzarella, des tomates fraîches et du basilic.",
+      "ingredients": [
+        "Tomates",
+        "Mozzarella",
+        "Basilic frais",
+        "Huile d'olive",
+        "Vinaigre balsamique"
+      ]
+    }
+  ],
+  "pizzas": [
+    {
+      "name": "Margherita",
+      "image": "https://fr.ooni.com/cdn/shop/articles/Margherita-9920.jpg?crop=center&height=800&v=1644590066&width=800",
+      "price": "10€",
+      "description": "Une pizza classique avec une base tomate et mozzarella.",
+      "ingredients": ["Tomates", "Mozzarella", "Basilic", "Huile d'olive"]
+    },
+    {
+      "name": "Pepperoni",
+      "image": "https://fr.ooni.com/cdn/shop/articles/pepperoni-pizza_9393d389-4522-4440-9b73-ffb0ab8cd068.jpg?crop=center&height=800&v=1616497039&width=800",
+      "price": "12€",
+      "description": "Pizza épicée avec pepperoni et fromage.",
+      "ingredients": ["Pepperoni", "Fromage", "Tomates", "Origan"]
+    },
+    {
+      "name": "4 Fromages",
+      "image": "https://boutique.restaurant-paradoux.fr/images/produits/2184/1728997190-4-fromages.webp",
+      "price": "9€",
+      "description": "Une pizza savoureuse avec une base de fromage fondant.",
+      "ingredients": ["Fromage", "Tomates", "Herbes de Provence"]
+    },
+    {
+      "name": "Reine",
+      "image": "https://boutique.restaurant-paradoux.fr/images/produits/2184/1728997015-reine.webp",
+      "price": "12€",
+      "description": "Une pizza avec du jambon, des champignons et du fromage.",
+      "ingredients": ["Jambon", "Champignons", "Fromage", "Tomates"]
+    },
+    {
+      "name": "Hawaïenne",
+      "image": "https://fr.ooni.com/cdn/shop/articles/spicy-hawaiian-pizza_resized.jpg?crop=center&height=800&v=1616497011&width=800",
+      "price": "11€",
+      "description": "Une pizza sucrée-salée avec du jambon et de l'ananas.",
+      "ingredients": ["Jambon", "Ananas", "Fromage", "Tomates"]
+    },
+    {
+      "name": "Végétarienne",
+      "image": "https://fr.ooni.com/cdn/shop/articles/spicy-hawaiian-pizza_resized.jpg?crop=center&height=800&v=1616497011&width=800",
+      "price": "10€",
+      "description": "Une pizza avec une sélection de légumes frais.",
+      "ingredients": [
+        "Poivrons",
+        "Oignons",
+        "Olives",
+        "Champignons",
+        "Fromage",
+        "Tomates"
+      ]
+    },
+    {
+      "name": "Pizza au Poulet",
+      "image": "https://d1e3z2jco40k3v.cloudfront.net/-/media/mcch2017/recipes/800/pizza_au_poulet_800.jpg",
+      "price": "13€",
+      "description": "Pizza avec du poulet grillé et des légumes.",
+      "ingredients": ["Poulet", "Poivrons", "Oignons", "Fromage", "Tomates"]
+    }
+  ],
+  "burgers": [
+    {
+      "name": "Burger Classique",
+      "image": "https://boutique.burgergambetta38.fr/images/produits/2119/1725972941-le-classic.webp",
+      "price": "9€",
+      "description": "Un burger simple et savoureux avec du bœuf, du fromage et des légumes frais.",
+      "ingredients": [
+        "Pain",
+        "Bœuf",
+        "Laitue",
+        "Tomate",
+        "Fromage",
+        "Sauce burger"
+      ]
+    },
+    {
+      "name": "Burger Vegan",
+      "image": "https://v2food-site-media.s3.ap-southeast-2.amazonaws.com/image_v2mince_v2burger_800px_8b53fe2042.jpeg",
+      "price": "11€",
+      "description": "Une alternative végétalienne avec un steak vegan et des légumes frais.",
+      "ingredients": [
+        "Pain vegan",
+        "Steak végétal",
+        "Laitue",
+        "Tomate",
+        "Oignons rouges",
+        "Sauce vegan"
+      ]
+    },
+    {
+      "name": "Burger Poulet Grillé",
+      "image": "https://boutique.restaurantlesardoines.fr/images/produits/2070/1722585412-burger-poulet.webp",
+      "price": "10€",
+      "description": "Un burger léger avec du poulet grillé et des légumes croquants.",
+      "ingredients": [
+        "Pain",
+        "Poulet grillé",
+        "Laitue",
+        "Tomate",
+        "Sauce au yaourt"
+      ]
+    },
+    {
+      "name": "Burger Fromage",
+      "image": "https://www.batistinburger.fr/public/img/medium/Alpin1jpg_619227ae2090c.jpg",
+      "price": "12€",
+      "description": "Un burger généreux avec une double portion de fromage fondant.",
+      "ingredients": [
+        "Pain",
+        "Bœuf",
+        "Double fromage",
+        "Laitue",
+        "Tomate",
+        "Sauce au fromage"
+      ]
+    },
+    {
+      "name": "Burger Bacon",
+      "image": "https://www.delivery-pickup.com/wp-content/uploads/2020/05/Bacon-Burger.jpg",
+      "price": "13€",
+      "description": "Un burger gourmand avec du bacon croustillant et du fromage fondu.",
+      "ingredients": ["Pain", "Poulet", "Bacon", "Fromage", "Sauce BBQ"]
+    },
+    {
+      "name": "Burger BBQ",
+      "image": "https://mccormick.widen.net/content/hj4whcfmkr/original/applewood_bbq_burgers_800x800.jpg",
+      "price": "14€",
+      "description": "Un burger au goût fumé avec une sauce BBQ maison.",
+      "ingredients": [
+        "Pain",
+        "Bœuf",
+        "Fromage",
+        "Oignons caramélisés",
+        "Sauce BBQ",
+        "Cornichons"
+      ]
+    },
+    {
+      "name": "Burger Végétarien",
+      "image": "https://www.batistinburger.fr/public/img/medium/Vegetarien1jpg_619226f36f82b.jpg",
+      "price": "11€",
+      "description": "Un burger frais et savoureux avec une galette de légumes et des herbes.",
+      "ingredients": [
+        "Pain",
+        "Galette de légumes",
+        "Laitue",
+        "Tomate",
+        "Oignons",
+        "Sauce au yaourt"
+      ]
+    }
+  ],
+ "boissons": [
+  {
+    "name": "Coca-Cola",
+    "image": "https://www.svgrepo.com/show/303641/coca-cola-logo-logo.svg",
+    "price": "2€",
+    "description": "La boisson gazeuse emblématique au goût unique de cola.",
+    "size": "33cl"
+  },
+  {
+    "name": "Orangina",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMB72NEqlzwMvSyt6KU4LoSWu_nN_THmYuBw&s",
+    "price": "2,5€",
+    "description": "Une boisson pétillante et fruitée à base d'orange.",
+    "size": "25cl"
+  },
+  {
+    "name": "Ice Tea Pêche",
+    "image": "https://static-resto.bewaps.com/data/90/produits/32834-3-large.png",
+    "price": "2€",
+    "description": "Un thé glacé doux et rafraîchissant à la saveur de pêche.",
+    "size": "33cl"
+  },
+  {
+    "name": "Ice Tea Citron",
+    "image": "https://media.licdn.com/dms/image/v2/D4D22AQGU89JmsiGCOw/feedshare-shrink_800/feedshare-shrink_800/0/1680684842391?e=2147483647&v=beta&t=TH1WHwpsyCsD3sEv_GDfhpEzYeZiTkitGnN0inCqghM",
+    "price": "2€",
+    "description": "Un thé glacé léger et rafraîchissant au goût de citron.",
+    "size": "33cl"
+  }
+]
+,
+  "desserts": [
+    {
+      "name": "Tarte au Citron",
+      "image": "https://recettesdejulie.fr/wp-content/uploads/2022/09/tarte-citron7-vignette-2.jpg",
+      "price": "4€",
+      "description": "Une tarte sucrée et acidulée au citron.",
+      "ingredients": ["Pâte sablée", "Crème citron", "Meringue"]
+    },
+    {
+      "name": "Mousse au Chocolat",
+      "image": "https://www.terreexotique.fr/media/amasty/blog/uploads/2021/05/Sans-titre-39.png",
+      "price": "3,50€",
+      "description": "Une mousse légère et onctueuse au chocolat noir.",
+      "ingredients": ["Chocolat noir", "Œufs", "Sucre"]
+    },
+    {
+      "name": "Crème Brûlée",
+      "image": "https://v.cdn.ww.com/media/system/wine/58f086e48b0d792488f7df61/a94285c7-3b8d-44d2-9e4c-e7cd008f7a70/yugrmqfipkax34q5fplg.jpg?fit=crop&height=800&width=800&enable=upscale&quality=80",
+      "price": "4,50€",
+      "description": "Un dessert crémeux à la vanille avec une croûte caramélisée.",
+      "ingredients": ["Crème", "Vanille", "Sucre", "Œufs"]
+    },
+    {
+      "name": "Tiramisu",
+      "image": "https://boutique.poulet-grille.fr/images/produits/1749/1710771804-tiramisu-maison.webp",
+      "price": "5€",
+      "description": "Un dessert italien à base de mascarpone et de café.",
+      "ingredients": ["Mascarpone", "Café", "Biscuits", "Cacao"]
+    }
+  ]
+}
