@@ -7,20 +7,12 @@
 }
 
 .nav-link {
-  font-size: 2.5vh;
+  font-size: 3vh;
   cursor: pointer;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-footer * {
-  font-size: 10px;
-}
-
-footer svg:hover{
-    color: #6046b6;
 }
 
 #newsletter * {

@@ -38,68 +38,9 @@
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour améliorer la lisibilité */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   opacity: 0; /* Texte caché par défaut */
   transition: opacity 0.3s ease-in-out;
-  z-index: 10; /* Le texte sera au-dessus de l'image */
+  z-index: 10; 
 }
 
-  
-
-/*   
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s;
-  }
-  
-  .menu-item:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .icon-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    width: 6rem;
-    height: 6rem;
-    background-color: blueviolet;
-    border: 5px solid rgba(255, 255, 255, 0.35);    
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .icon-container:hover {
-    background-color: yellow;
-  }
-
-  .menu-item:hover .icon-container {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  
-  .menu-icon {
-    font-size: 2rem;
-    transition: color 0.3s;
-  }
-  
-  .menu-icon {
-    font-size: 2rem;
-    transition: color 0.3s;
-    background-color: transparent;
-  }
-
-  .menu-icon svg {
-    color: white; 
-    background-color: transparent;
-  }
-
-  .menu-item:hover .menu-icon {
-    color: #137C8B;
-  }
-   */

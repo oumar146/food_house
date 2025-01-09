@@ -1,3 +1,8 @@
+footer {
+background-color: #6046b6;
+color: white;
+}
+
 footer * {
-  size: 10px;
+  font-size: 10px;
 }
