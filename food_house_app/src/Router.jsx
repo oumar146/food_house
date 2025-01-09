@@ -1,7 +1,7 @@
 import Home from './pages/Home';
 import Cart from './pages/Cart'; 
 import PizzaDetails from './pages/PizzaDetails ';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Utilisation de Navigate pour redirections
+import { HashRouter, Routes, Route } from 'react-router-dom'; // Utilisation de Navigate pour redirections
 import './styles/global.css'
 
 
@@ -16,7 +16,7 @@ const routes = [
 ];
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
           {/* Routes protégées */}
           {routes.map(({ path, element }, index) => (
@@ -30,7 +30,7 @@ const routes = [
         {/* Ajouter une route 404 par défaut si aucune correspondance n'est trouvée */}
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
