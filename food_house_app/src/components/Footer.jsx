@@ -14,7 +14,7 @@ const Footer = () => {
             <img
               alt="Logo restaurant"
               src="https://livedemo00.template-help.com/wt_prod-19362/images/logo-189x66.png"
-              className="h-6 w-auto"
+              className="h-12 w-auto"
             />
             </span>
           </a>
