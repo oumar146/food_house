@@ -1,17 +1,59 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import NavLinkWithScroll from "./NavLinkWithScroll";
+
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+
+const DropdownMenu = ({mobileMenuOpen, setMobileMenuOpen}) => {
+  const routesWithNames = [
+    { path: "/cart/salades", name: "Salades" },
+    { path: "/cart/pizzas", name: "Pizzas" },
+    { path: "/cart/burgers", name: "Burgers" },
+    { path: "/cart/boissons", name: "Boissons" },
+    { path: "/cart/desserts", name: "Desserts" },
+  ];
+
+  return (
+    <Menu as="div" className="relative inline-block ">
+      <div>
+        <MenuButton className="inline-flex justify-center font-semibold">
+          Menu
+          <ChevronDownIcon aria-hidden="true" className="size-4 " />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+  transition
+  className="absolute left-0 z-10 mt-2 w-35 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+>
+
+        <div className="py-1">
+          {routesWithNames.map((route) => (
+            <MenuItem key={route.path}>
+              <NavLink
+                to={route.path}
+                onClick={()=>{mobileMenuOpen === true && setMobileMenuOpen(false)}}
+                className="nav-link block px-4 py-2  text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+              >
+                {route.name}
+              </NavLink>
+            </MenuItem>
+          ))}
+        </div>
+      </MenuItems>
+    </Menu>
+  );
+};
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header className="bg-white color-red">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between  p-4 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <div className="-m-1.5 ">
@@ -30,29 +72,24 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
-            <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden sm:flex sm:gap-x-5">
-          <NavLinkWithScroll
-            to="/home#menu"
+        <PopoverGroup className="hidden sm:flex sm:gap-x-5 items-center">
+          <NavLink to="/home" className="nav-link font-semibold text-gray-900">
+            Home
+          </NavLink>
+          <div className="nav-link font-semibold text-gray-900">
+            <DropdownMenu />
+          </div>
+          <div
+            onClick={() => {
+              window.scrollTo(10000, 10000);
+            }}
             className="nav-link font-semibold text-gray-900"
           >
-            Menu
-          </NavLinkWithScroll>
-          <a
-            href="#reservation"
-            className="nav-link font-semibold text-gray-900"
-          >
-            Reserver
-          </a>
-          <a
-            href="#newsletter"
-            className="nav-link font-semibold text-gray-900"
-          >
-            Newletter
-          </a>
+            Reservation
+          </div>
         </PopoverGroup>
       </nav>
       <Dialog
@@ -82,12 +119,31 @@ const Header = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <div className="nav-link font-semibold text-gray-900">Menu</div>
-                <div className=" nav-link font-semibold text-gray-900">
-                  A propos de nous
+                {/* <NavLinkWithScroll
+                  to="/home#menu"
+                  className="nav-link font-semibold text-gray-900"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Menu
+                </NavLinkWithScroll> */}
+                <NavLink
+                  to="/home"
+                  className="nav-link font-semibold text-gray-900"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Home
+                </NavLink>
+                <div className="nav-link font-semibold text-gray-900">
+                  <DropdownMenu mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
                 </div>
-                <div className=" nav-link font-semibold text-gray-900">
-                  Company
+                <div
+                  onClick={() => {
+                    window.scrollTo(10000, 10000);
+                    setMobileMenuOpen(false);
+                  }}
+                  className="nav-link font-semibold text-gray-900"
+                >
+                  Reservation
                 </div>
               </div>
             </div>
