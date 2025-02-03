@@ -84,6 +84,14 @@ const Footer = () => {
                   Contactez-nous
                 </a>
               </li>
+              <li id='reservation'>
+                <a
+                  href="/reservation"
+                  className="text-gray-800 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  07 67 98 31 09
+                </a>
+              </li>
             </ul>
           </div>
           <div>

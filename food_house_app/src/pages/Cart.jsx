@@ -5,6 +5,7 @@ import Newsletter from "../components/Newsletter";
 import { useParams, NavLink } from "react-router-dom";
 import "../styles/menu.css";
 import menuData from "../data/menuData.json";
+import grayPlaceholder from "../assets/gray_placeholder_800x800.png";
 
 const CartItems = () => {
   const { category } = useParams(); // Récupère la catégorie depuis l'URL
@@ -24,7 +25,7 @@ const CartItems = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={menu.image} alt={menu.name} />
+            <img src={menu.image || grayPlaceholder} alt={menu.name} />
             <h5 className="name">{menu.name}</h5>
             <p className="price">{menu.price}</p>
           </NavLink>
@@ -38,7 +39,6 @@ const CartItems = () => {
     </div>
   );
 };
-
 
 const Menu = () => {
   return (
