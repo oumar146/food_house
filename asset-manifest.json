@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/food_house/static/css/main.d3ca6d9b.css",
-    "main.js": "/food_house/static/js/main.e038fb03.js",
+    "main.css": "/food_house/static/css/main.96fec115.css",
+    "main.js": "/food_house/static/js/main.990102b3.js",
     "index.html": "/food_house/index.html",
-    "main.d3ca6d9b.css.map": "/food_house/static/css/main.d3ca6d9b.css.map",
-    "main.e038fb03.js.map": "/food_house/static/js/main.e038fb03.js.map"
+    "main.96fec115.css.map": "/food_house/static/css/main.96fec115.css.map",
+    "main.990102b3.js.map": "/food_house/static/js/main.990102b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3ca6d9b.css",
-    "static/js/main.e038fb03.js"
+    "static/css/main.96fec115.css",
+    "static/js/main.990102b3.js"
   ]
 }
