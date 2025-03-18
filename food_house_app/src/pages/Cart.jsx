@@ -25,7 +25,7 @@ const CartItems = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={menu.image || grayPlaceholder} alt={menu.name} />
+            <img src={menu.image || grayPlaceholder} alt={menu.name} title={menu.name} />
             <h5 className="name">{menu.name}</h5>
             <p className="price">{menu.price}</p>
           </NavLink>

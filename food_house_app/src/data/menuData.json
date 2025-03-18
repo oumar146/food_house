@@ -182,7 +182,7 @@
   "burgers": [
     {
       "name": "Burger Classique",
-      "image": "https://boutique.burgergambetta38.fr/images/produits/2119/1725972941-le-classic.webp",
+      "image": "https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/45537106-cbd2-450e-a8c8-35b83489e125.jpeg",
       "price": "9€",
       "description": "Un burger simple et savoureux avec du bœuf, du fromage et des légumes frais.",
       "ingredients": [

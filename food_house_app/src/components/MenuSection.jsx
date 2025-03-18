@@ -18,7 +18,7 @@ const MenuSection = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={item.bgImage || grayPlaceholder} alt={item.title} />
+            <img src={item.bgImage || grayPlaceholder} alt={item.title} title={item.title} />
             <h5 className="title">{item.title}</h5>
           </NavLink>
         ))}
