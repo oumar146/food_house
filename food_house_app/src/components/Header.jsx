@@ -18,7 +18,7 @@ const DropdownMenu = ({mobileMenuOpen, setMobileMenuOpen}) => {
   return (
     <Menu as="div" className="relative inline-block ">
       <div>
-        <MenuButton className="inline-flex justify-center font-semibold">
+        <MenuButton className="nav-link inline-flex justify-center font-semibold">
           Menu
           <ChevronDownIcon aria-hidden="true" className="icon-size-6" />
         </MenuButton>

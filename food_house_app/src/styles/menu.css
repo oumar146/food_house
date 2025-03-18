@@ -1,28 +1,34 @@
 .menu-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-
-  }
-  
-  .menu-card {
-    padding: 0px 0px 10px 0px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.148);
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .menu-card h5 {
-    font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
 }
 
-.menu-card .price {
-    font-size: 12px;
+.menu-card {
+  padding: 0px 0px 10px 0px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.148);
+  text-align: center;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.menu-card .name{
+  padding: 10px 0px 0px 0px;
+
 }
 
 .error-message {
-    text-align: center;
+  text-align: center;
 }
 
+@media (max-width: 600px) {
+  .menu-cards {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
